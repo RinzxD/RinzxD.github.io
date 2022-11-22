@@ -100,10 +100,10 @@ canvas {
         </div>
         <div id="tampilanAwal">
             <button onclick="choose()" style="margin-bottom: 2%;">Start</button><br>
-            <button id="setting" onclick="pengaturan()">Options</button>
+            <button id="setting" onclick="pengaturan()">Settings</button>
         </div>
         <div  id="volume" style="display: none;" >
-            <p style="font-size: 25px;">Options</p>
+            <p style="font-size: 25px;">Settings</p>
             <h2>AUDIO</h2>
             <input type="range" min="0" max="100" step="1" value="50"><br><span class="X">X</span><br>
 
@@ -171,8 +171,8 @@ function startGame() {//AWAL MULAI PERSIAPAN
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Inter", "antiquewhite", 630, 40, "text");
     myGameArea.start();
-    mySound = new sound('');
-    myMusic = new sound("");
+    mySound = new sound('gameover.mp3');
+    myMusic = new sound("music.mp3");
     GetScore = 0
     UI();
     document.querySelector('#pemain').style.display = "none";
